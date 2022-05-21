@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Project 19</title>
+</head>
+<body>
+    <form action="#">
+            
+        <div class="input-div">
+            <label class="form-text" for="title">Title*</label> 
+            <input type="text" id="title" placeholder="Post title" required="">     
+        </div> 
+        <div class="input-div"> 
+            <label class="form-text" for="Description">Description<span class="violet">*</span></label>
+            <textarea name="Post-description" id="Description"></textarea>
+        </div>
+        <div class="input-div">
+            <label class="form-text" for="title">Image<span class="violet">*</span></label> 
+            <input type="file" id="myfile" name="myfile">     
+        </div>
+        <h3 class="form-text">Please select your favorite Web language:</h3>
+        <div class="input-div">
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+        <div class="input-div"> 
+            <label class="form-text" for="email">Email<span class="violet">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+        </div>
+
+
+        <div class="horizontal-line"></div>
+        <div class="service-buttons-div">
+            <button class="creating-service-button close-white" onclick="closeForm()">close</button>
+            <button class="creating-service-button save-blue">Save Changes</button>
+        </div>
+    </form>
+    
+</body>
+</html>
