@@ -12,18 +12,14 @@
     <form action="#">
             
         <div class="input-div">
-            <label class="form-text" for="title">Title*</label> 
-            <input type="text" id="title" placeholder="Post title" required="">     
+            <label class="form-text" for="title">Username<span class="violet">*</span></label> 
+            <input type="text" id="title" placeholder="Username">     
         </div> 
         <div class="input-div"> 
             <label class="form-text" for="Description">Description<span class="violet">*</span></label>
-            <textarea name="Post-description" id="Description"></textarea>
+            <textarea name="Description" id="Description" placeholder="Enter Description"></textarea>
         </div>
-        <div class="input-div">
-            <label class="form-text" for="title">Image<span class="violet">*</span></label> 
-            <input type="file" id="myfile" name="myfile">     
-        </div>
-        <h3 class="form-text">Please select your favorite Web language:</h3>
+        <h3 class="form-text">Please select your favorite Web language:<span class="violet">*</span></h3>
         <div class="input-div">
             <input type="radio" id="html" name="fav_language" value="HTML">
             <label for="html">HTML</label>
@@ -36,13 +32,18 @@
             <label class="form-text" for="email">Email<span class="violet">*</span></label>
             <input type="email" id="email" name="email" placeholder="Enter Your Email">
         </div>
-
-
-        <div class="horizontal-line"></div>
-        <div class="service-buttons-div">
-            <button class="creating-service-button close-white" onclick="closeForm()">close</button>
-            <button class="creating-service-button save-blue">Save Changes</button>
+        <h3 class="form-text">Password<span class="violet">*</span></h3>
+        <div class="input-div">
+            <input type="password" name="password" placeholder="Password" id="passw">
         </div>
+        <div class="input-div">
+            <input type="password" name="password2" placeholder="Repeat Password" id="passw2">
+        </div>
+        <div>
+            <input class="input-div" type="checkbox" name="agree" id="checkagree">
+            <label for="checkagree"> I agree terms and conditions</label>
+        </div>
+        <button class="submit-button">Submit</button>
     </form>
     
 </body>

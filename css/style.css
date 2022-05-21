@@ -1,0 +1,54 @@
+body{
+    background-color: #F9F871;
+}
+form{
+    width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    position: relative;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.input-div{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#Description{
+    width: 60%;
+    height: 150px;
+    padding: 20px;
+}
+#title,#Description,#myfile, #email{
+    margin-top: 20px;
+}
+.submit-button{
+    height: 50px;
+    padding: 10px;
+    border: 2px solid #72727293;
+    margin-right: 10px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor:pointer; 
+    background-color: #4DFCE0;
+    color: white;
+    margin-bottom: 10px;
+}
+.violet{
+    color: #df2727;
+}
+#title, #email, #passw, #passw2 {
+    /* border: none; */
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 16px;
+    font-style: italic;
+}
+.form-text{
+    color: #454343;
+    font-size: 17px;
+    display: block;
+}
+input, textarea, .form-text, button, label{
+    font-family: 'Poppins';
+}
