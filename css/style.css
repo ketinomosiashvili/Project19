@@ -34,10 +34,10 @@ form{
     color: white;
     margin-bottom: 10px;
 }
-.violet{
+.required_{
     color: #df2727;
 }
-#title, #email, #passw, #passw2 {
+#title, #email, #password, #password2 {
     /* border: none; */
     border: 2px solid black;
     padding: 10px;
@@ -51,4 +51,23 @@ form{
 }
 input, textarea, .form-text, button, label{
     font-family: 'Poppins';
+}
+#age2, #age1, #age3{
+    margin-left: 20px;
+}
+.error-text{
+    margin-top: 20px;
+    padding: 5px;
+    width: 300px;
+    display: block;
+}
+.fa-solid{
+    font-size: 20px;
+    margin-left: 5px;
+}
+.invalid{
+    border: 2px solid red;
+}
+.valid{
+    border: 2px solid green;
 }

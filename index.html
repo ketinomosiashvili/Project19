@@ -5,46 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Project 19</title>
 </head>
 <body>
-    <form action="#">
+    <form action="#" id="registration" method="POST">
             
         <div class="input-div">
-            <label class="form-text" for="title">Username<span class="violet">*</span></label> 
-            <input type="text" id="title" placeholder="Username">     
+            <label class="form-text" for="title">Username<span class="required_">*</span></label> 
+            <input type="text" id="title" name="username" placeholder="Username" onkeydown="validation()">   
+            <span class="error-text" id="error_username"></span>  
         </div> 
         <div class="input-div"> 
-            <label class="form-text" for="Description">Description<span class="violet">*</span></label>
+            <label class="form-text" for="Description">Description<span class="required_">*</span></label>
             <textarea name="Description" id="Description" placeholder="Enter Description"></textarea>
+            <span class="error-text" id="error_description"></span>
         </div>
-        <h3 class="form-text">Please select your favorite Web language:<span class="violet">*</span></h3>
+        <h3 class="form-text">Select your age:<span class="required_">*</span></h3>
         <div class="input-div">
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label for="html">HTML</label>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label for="css">CSS</label>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label for="javascript">JavaScript</label>
+            <input type="radio" name="age" id="age1">
+            <label for="age1"> 18 - 35</label>
+            <input type="radio" name="age" id="age2">
+            <label for="age2">  35- 50</label>
+            <input type="radio" name="age" id="age3">
+            <label for="age2">50+</label>
+            <span class="error-text" id="error_age"></span>
         </div>
         <div class="input-div"> 
-            <label class="form-text" for="email">Email<span class="violet">*</span></label>
-            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+            <label class="form-text" for="email">Email<span class="required_">*</span></label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" onkeydown="emailValidation()">
+            <span class="error-text" id="error_email"></span>
         </div>
-        <h3 class="form-text">Password<span class="violet">*</span></h3>
+        <h3 class="form-text">Password<span class="required_">*</span></h3>
         <div class="input-div">
-            <input type="password" name="password" placeholder="Password" id="passw">
+            <input type="password" name="password" placeholder="Password" id="password">
+            <i id="toggleIcon" class="fa-solid fa-eye"></i>
+            <span class="error-text" id="error_password"></span>
         </div>
         <div class="input-div">
-            <input type="password" name="password2" placeholder="Repeat Password" id="passw2">
+            <input type="password"  name="password2" placeholder="Repeat Password" id="password2">
+            <i id="toggleIcon2" class="fa-solid fa-eye"></i>
+            <span class="error-text" id="error_password2"></span>
         </div>
-        <div>
+        <div class="input-div">
             <input class="input-div" type="checkbox" name="agree" id="checkagree">
-            <label for="checkagree"> I agree terms and conditions</label>
+            <label for="checkagree"> I agree terms and conditions<span class="required_">*</span></label>
+            <span class="error-text" id="error_agree"></span>
         </div>
         <button class="submit-button">Submit</button>
     </form>
-    
+    <script src="script.js"></script>
 </body>
 </html>
